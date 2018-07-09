@@ -3,13 +3,13 @@ function justInvoke(fn){
 }
 
 function setThisWithCall(fn, thisValue, arg){
-  return justInvoke.call(fn, thisValue, arg);
+  return fn.call(thisValue, arg);
 }
 
 function setThisWithApply(fn, thisValue, arg){
-  return justInvoke.apply(fn, [thisValue, arg]);
+  return fn.apply(thisValue, [arg]);
 }
 
 function returnNewFunctionOf(functionToBeCopied, thisValue){
-  
+
 }
